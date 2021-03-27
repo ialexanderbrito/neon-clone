@@ -29,19 +29,32 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <Head>
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
+      <>
+        <Html>
+          <Head>
+            <link rel="shortcut icon" href="favicon.png" type="image/png" />
+
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              href="//db.onlinewebfonts.com/c/f036e81e6040acc6b43aabc036862d21?family=Averta-Regular"
+              rel="stylesheet"
+              type="text/css"
+            />
+          </Head>
+          <body>
+            <Main />
+            <NextScript />
+          </body>
+        </Html>
+      </>
     );
   }
 }
