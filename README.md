@@ -1,9 +1,8 @@
-<h1 align="center">
-  <img src="public/assets/logo.svg"  />
-</h1>
 <h4 align="center">
- <b>Clone do site Banco Neon</b>
+  <img src="public/assets/logo.svg" width="300px" /><br>
+  <b>🏦 Clone do site Banco Neon</b>
 </h4>
+
 <p align="center">
   <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/ialexanderbrito/neon-clone?style=flat-square" />
   <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/ialexanderbrito/neon-clone?style=flat-square" />
