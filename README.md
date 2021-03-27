@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img src="public/assets/logo.svg" width="300px" /><br>
+  <img src=".github/neon.png" width="250px" /><br>
   <b>🏦 Clone do site Banco Neon</b>
 </h4>
 
