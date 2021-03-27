@@ -110,3 +110,117 @@ export const ContainerMovie = styled.article`
     }
   }
 `;
+
+export const Products = styled.div`
+  ${tw`w-full pt-12 pr-0 pb-0 m-0 m-auto flex items-center justify-center flex-col`};
+  max-width: 1140px;
+
+  & > header {
+    ${tw`flex flex-1 mb-10`}
+  }
+
+  h1 {
+    ${tw`text-3xl leading-10 font-bold font-inter`}
+  }
+
+  .button-all-products {
+    ${tw`flex-1 flex items-center justify-center mb-16 text-white`};
+
+    div {
+      ${tw`rounded-3xl text-white`};
+      background: #00a5f0;
+      color: #fff;
+
+      &:hover {
+        background: #0082bd;
+      }
+    }
+  }
+`;
+
+export const ContainerCards = styled.div`
+  ${tw`flex items-center justify-between flex-wrap pt-0 pr-5 pb-10 pl-5`};
+
+  article {
+    ${tw`flex flex-col justify-center items-center w-full  cursor-pointer rounded-lg p-5`}
+    flex-basis: calc(33% - 18px);
+    max-width: 350px;
+    height: 359px;
+    transition: all 0.3s ease;
+
+    header {
+      ${tw`order-1 flex flex-col justify-center items-center`}
+
+      h2 {
+        ${tw`w-full text-xl leading-loose text-center text-white font-bold mb-5 font-inter`}
+      }
+
+      p {
+        ${tw`text-lg leading-7 text-white font-inter w-full text-center`}
+      }
+    }
+
+    img {
+      ${tw`w-full order-none mb-5`}
+      max-width: 150px;
+    }
+  }
+
+  article:nth-child(1) {
+    background: #0046a0;
+    :hover {
+      background: #003b87;
+    }
+  }
+
+  article:nth-child(2) {
+    background: #0073cd;
+    :hover {
+      background: #0065b4;
+    }
+  }
+
+  article:nth-child(3) {
+    background: #008282;
+    :hover {
+      background: #006969;
+    }
+  }
+`;
+
+export const AppDownloadStore = styled.section`
+  ${tw`py-16 px-0`}
+  background: #0073cd;
+`;
+
+export const AppContent = styled.div`
+  ${tw`w-full m-0 m-auto py-16 px-0 flex items-center`}
+  max-width: 1140px;
+
+  header {
+    ${tw`py-0 px-4 ml-24`}
+
+    h1 {
+      ${tw`text-3xl text-white font-bold mb-10 leading-10 font-inter`}
+      width: 430px;
+    }
+
+    .store {
+      ${tw`flex-row flex`}
+    }
+
+    img {
+      ${tw`cursor-pointer`}
+    }
+
+    img:last-child {
+      ${tw`ml-5`}
+    }
+  }
+
+  > img {
+    ${tw`w-full py-0 px-4 ml-20`}
+    max-width: 350px;
+    height: 678px;
+  }
+`;

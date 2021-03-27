@@ -9,6 +9,10 @@ import {
   ContentBanner,
   Main,
   ContainerMovie,
+  Products,
+  ContainerCards,
+  AppDownloadStore,
+  AppContent,
 } from '../styles/Home';
 
 export default function Home() {
@@ -47,7 +51,7 @@ export default function Home() {
               <a href="/">Tarifas</a>
             </li>
             <li>
-              <a href="/">#FocoNoDinheiro</a>
+              <a href="/">#FocaNoDinheiro</a>
             </li>
             <li>
               <a href="/">Conheça a Neon</a>
@@ -88,6 +92,66 @@ export default function Home() {
               />
             </div>
           </ContainerMovie>
+          <Products>
+            <header>
+              <h1>Resolva sua vida direto no app!</h1>
+            </header>
+            <ContainerCards>
+              <article>
+                <header>
+                  <h2>Crédito</h2>
+                  <p>
+                    Sua conta digital tem cartão de crédito sem anuidade nem
+                    complicação.
+                  </p>
+                </header>
+                <img src="assets/neon_card.png" alt="Cartão Neon" />
+              </article>
+
+              <article>
+                <header>
+                  <h2>Sem taxas</h2>
+                  <p>
+                    Você não paga nada por transferências, boletos de depósito e
+                    outros serviços no app.
+                  </p>
+                </header>
+                <img src="assets/neon_fees.png" alt="Neon Taxas" />
+              </article>
+
+              <article>
+                <header>
+                  <h2>Investimentos</h2>
+                  <p>
+                    Rendem mais que a poupança e você resgata quando quiser.
+                  </p>
+                </header>
+                <img src="assets/neon_invest.png" alt="Neon Investimentos" />
+              </article>
+            </ContainerCards>
+            <div className="button-all-products">
+              <Button>
+                <a href="/" style={{ color: '#FFF' }}>
+                  Todos os produtos
+                </a>
+              </Button>
+            </div>
+          </Products>
+          <AppDownloadStore>
+            <AppContent>
+              <header>
+                <h1>
+                  Que tal abrir uma conta digital para ver como a gente faz a
+                  sua vida mais simples?
+                </h1>
+                <div className="store">
+                  <img src="assets/badge_play.svg" alt="Play Store" />
+                  <img src="assets/badge_app.svg" alt="Apple Store" />
+                </div>
+              </header>
+              <img src="assets/app_dashboard.png" alt="App" />
+            </AppContent>
+          </AppDownloadStore>
         </Main>
       </Container>
     </>
