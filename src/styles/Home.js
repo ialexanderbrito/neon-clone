@@ -83,6 +83,18 @@ export const ContentBanner = styled.section`
     ${tw`mt-5 text-white`}
   }
 
+  .default-button {
+    ${tw`w-full h-10 bg-yellow-300 hover:bg-yellow-400 py-2.5 px-5 flex items-center justify-center rounded-3xl`};
+
+    min-width: 155px;
+    transition: all 0.3s;
+    min-width: 9.6875rem;
+
+    a {
+      ${tw`uppercase font-bold text-base leading-9 text-black`}
+    }
+  }
+
   p + p {
     ${tw`w-48`}/* width: 179px; */
   }
@@ -121,6 +133,18 @@ export const Products = styled.div`
 
   h1 {
     ${tw`text-3xl leading-10 font-bold font-inter`}
+  }
+
+  .default-button {
+    ${tw`w-full h-10 bg-yellow-300 hover:bg-yellow-400 py-2.5 px-5 flex items-center justify-center rounded-3xl`};
+
+    min-width: 155px;
+    transition: all 0.3s;
+    min-width: 9.6875rem;
+
+    a {
+      ${tw`uppercase font-bold text-base leading-9 text-black`}
+    }
   }
 
   .button-all-products {
@@ -222,5 +246,97 @@ export const AppContent = styled.div`
     ${tw`w-full py-0 px-4 ml-20`}
     max-width: 350px;
     height: 678px;
+  }
+`;
+
+export const Footer = styled.footer`
+  ${tw`my-0 mx-auto w-full flex items-center justify-center flex-col mt-20`}
+  max-width: 1140px;
+
+  header {
+    ${tw`flex items-center justify-between `}
+    margin: 0px -15px 20px;
+
+    img:first-child {
+      ${tw`ml-0`}
+    }
+
+    img {
+      ${tw`cursor-pointer h-8 w-8 ml-5`}
+      transition: all 0.35s ease;
+      :hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .container-footer {
+    ul {
+      ${tw`flex items-center`}
+      li {
+        ${tw`flex items-center`}
+        a {
+          color: #0073cd;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 700;
+        }
+        :nth-child(even)::after,
+        :nth-child(even)::before {
+          content: '•';
+          margin: 0px 10px;
+          color: #0073cd;
+        }
+        :last-child::after {
+          content: '';
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+  .copyright-footer {
+    ${tw`w-full pt-2.5 pr-2.5 pb-0 pl-2.5`}
+    max-width: calc(940px - 20px);
+    hr {
+      ${tw`my-2 mx-0`}
+    }
+    ul {
+      ${tw`w-full`}
+      li {
+        ${tw`leading-3 text-center`}
+        strong,
+        span {
+          ${tw`text-xs`}
+        }
+      }
+    }
+  }
+
+  .info-footer {
+    ${tw`w-full flex items-start justify-between py-0 px-2.5`}
+    max-width: calc(940px - 20px);
+
+    .info {
+      ${tw`flex-1`}
+
+      p {
+        ${tw`text-xs leading-5`}
+      }
+    }
+
+    .seal {
+      ${tw`w-full flex flex-col items-start `}
+      flex-basis: 215px;
+
+      img {
+        ${tw`mt-0 mr-0 mb-0 ml-10`}
+        width: 165px;
+      }
+
+      p {
+        ${tw`text-xs leading-5 text-right`}
+      }
+    }
   }
 `;

@@ -13,6 +13,7 @@ import {
   ContainerCards,
   AppDownloadStore,
   AppContent,
+  Footer,
 } from '../styles/Home';
 
 export default function Home() {
@@ -23,12 +24,11 @@ export default function Home() {
       setScrollPosition(window.scrollY);
     });
   }, [scrollPosition]);
+
   return (
     <>
       <Head>
-        <title>
-          Conta Digital Grátis e Cartão de Crédito sem anuidade | Neon
-        </title>
+        <title>Neon</title>
       </Head>
       <Container>
         <ContentMenu scrollPosition={scrollPosition}>
@@ -42,7 +42,7 @@ export default function Home() {
               <a href="/">Conta</a>
             </li>
             <li>
-              <a href="/">Pejota</a>
+              <a href="/">MEI Fácil</a>
             </li>
             <li>
               <a href="/">Perguntas</a>
@@ -70,7 +70,9 @@ export default function Home() {
                 baixar o app!
               </p>
               <p>
-                <Button>Abra sua conta</Button>
+                <div className="default-button">
+                  <a href="/">Abra sua conta</a>
+                </div>
               </p>
             </header>
             <img src="assets/banner.png" alt="App mobile" />
@@ -130,11 +132,11 @@ export default function Home() {
               </article>
             </ContainerCards>
             <div className="button-all-products">
-              <Button>
+              <div className="default-button">
                 <a href="/" style={{ color: '#FFF' }}>
                   Todos os produtos
                 </a>
-              </Button>
+              </div>
             </div>
           </Products>
           <AppDownloadStore>
@@ -153,6 +155,69 @@ export default function Home() {
             </AppContent>
           </AppDownloadStore>
         </Main>
+        <Footer>
+          <header>
+            <img src="assets/facebook.svg" alt="Facebook" />
+            <img src="assets/linkedin.svg" alt="Linkedin" />
+            <img src="assets/twitter.svg" alt="Twitter" />
+            <img src="assets/instagram.svg" alt="Instagram" />
+            <img src="assets/youtube.svg" alt="Youtube" />
+          </header>
+          <div className="container-footer">
+            <ul>
+              <li>
+                <a href="/">Termos e Condições de Uso</a>
+              </li>
+              <li>
+                <a href="/">Política de Privacidade</a>
+              </li>
+              <li>
+                <a href="/">Carreira</a>
+              </li>
+              <li>
+                <a href="/">Ouvidoria</a>
+              </li>
+            </ul>
+          </div>
+          <div className="copyright-footer">
+            <hr />
+            <ul>
+              <li>
+                <strong>Atendimento: </strong>
+                <span>oi@neon.com.br (24 horas)</span>
+              </li>
+              <li>
+                <strong>Imprensa: </strong>
+                <span>imprensa@neon.com.br</span>
+              </li>
+            </ul>
+            <hr />
+          </div>
+          <div className="info-footer">
+            <div className="info">
+              <p>Neon Pagamentos S.A. – CNPJ 20.855.875/0001-82 </p>
+              <p>R. Hungria, 1400 – Jardim Europa, São Paulo – SP, 01455-000</p>
+              <p>Neon Pagamentos® 2018</p>
+              <p>&nbsp;</p>
+              <p>
+                Oi! Leu até aqui? Você se preocupa com os mínimos detalhes,
+                mesmo. A gente também.
+              </p>
+              <p>
+                Por isso o time Neon está sempre trabalhando para fazer a conta
+                digital perfeita para você <span>;)</span>
+              </p>
+              <p />
+            </div>
+            <div className="seal">
+              <img src="assets/selo_peb.png" alt="Selo" />
+              <p>
+                Esta empresa é membro da ABCD e, como tal, atende às Orientações
+                de Conduta constantes em seu Código de Ética e Autorregulação
+              </p>
+            </div>
+          </div>
+        </Footer>
       </Container>
     </>
   );
